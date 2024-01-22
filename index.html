@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshape Element</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="container">
+            <div class="box d-flex align-items-center ">
+                <div class="bar my-4 pt-2 w-100">
+                    <div class="inputbox my-2 d-flex w-100 align-items-center">
+                        <div class="inputs w-100">
+                            <h4>Width </h4>
+                            <input type="number" min="0" max="" value="0" class="form-control widthInput w-100">
+                            <h4>Height </h4>
+                            <input type="number" min="0" max="" value="0" class="form-control heightInput w-100">
+                        </div>
+                        <div class="btn2 w-100 text-center">
+                            <button type="button" class="btn mt-3">Draw</button>
+                        </div>
+                    </div>
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Red</h4>
+                        <span id="redRange"></span>
+                    </div>
+                    <input type="range" min="0" max="255" value="255" class="slider" id="red" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Green</h4>
+                        <span id="greenRange"></span>
+                    </div>
+                    <input type="range" min="0" max="255" value="255" class="slider" id="green" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Blue</h4>
+                        <span id="blueRange"></span>
+                    </div>
+                    <input type="range" min="0" max="255" value="255" class="slider" id="blue" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Alpha</h4>
+                        <span id="alphaRange"></span>
+                    </div>
+                    <input type="range" min="0" max="1" step="0.01" value="100" class="slider" id="alpha" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Border</h4>
+                        <p><span id="borderRange"></span></p>
+                    </div>
+                    <input type="range" min="0" max="50" value="0" class="slider" id="borderRadius">
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Opacity</h4>
+                        <span id="opacityRange"></span>
+                    </div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="opacity" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Width</h4>
+                        <span id="widthRange"></span>
+                    </div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="width" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Height</h4>
+                        <span id="heightRange"></span>
+                    </div>
+                    <input type="range" min="0" max="" value="100" class="slider" id="height" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Rotate</h4>
+                        <span id="rotateRange"></span>
+                    </div>
+                    <input type="range" min="0" max="360" value="180" class="slider" id="rotate" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Translate X</h4>
+                        <span id="translateXRange"></span>
+                    </div>
+                    <input type="range" min="-100" max="100" value="0" class="slider" id="translateX" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Translate Y</h4>
+                        <span id="translateYRange"></span>
+                    </div>
+                    <input type="range" min="-100" max="100" value="0" class="slider" id="translateY" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Scale</h4>
+                        <span id="scaleRange"></span>
+                    </div>
+                    <input type="range" min="0" max="200" value="100" class="slider" id="scale" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Skew X</h4>
+                        <span id="skewXRange"></span>
+                    </div>
+                    <input type="range" min="0" max="50" value="0" class="slider" id="skewX" />
+
+                    <div class="slidecontainer d-flex align-items-center justify-content-between">
+                        <h4>Skew Y</h4>
+                        <span id="skewYRange"></span>
+                    </div>
+                    <input type="range" min="0" max="50" value="0" class="slider" id="skewY" />
+                </div>
+                <div class="header w-100">
+                    <div class="element mt-5" id="demo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
